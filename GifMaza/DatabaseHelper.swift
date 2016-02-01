@@ -7,8 +7,6 @@
 //
 
 import Foundation
-import RealmSwift
-import Realm
 
 class DatabaseHelper{
     let myRealm = try! Realm()

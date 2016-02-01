@@ -18,7 +18,10 @@
 		90D6145E1C5EC6CD0000939F /* Gil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6145D1C5EC6CD0000939F /* Gil.swift */; };
 		90D614641C5ED2480000939F /* NetworkingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D614611C5ED2480000939F /* NetworkingHelper.swift */; };
 		90D614651C5ED2480000939F /* TranslatorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D614621C5ED2480000939F /* TranslatorHelper.swift */; };
-		90D614661C5ED2480000939F /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D614631C5ED2480000939F /* DatabaseHelper.swift */; };
+		90D614681C5EEB630000939F /* GifsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D614671C5EEB630000939F /* GifsCollectionViewController.swift */; };
+		90D6146A1C5EEB810000939F /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D614691C5EEB810000939F /* Layout.swift */; };
+		90D6146C1C5EEB890000939F /* UIColor+Pallette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6146B1C5EEB890000939F /* UIColor+Pallette.swift */; };
+		90D614701C5F07650000939F /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D6146F1C5F07650000939F /* UIImage+animatedGIF.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +58,12 @@
 		90D6145D1C5EC6CD0000939F /* Gil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gil.swift; sourceTree = "<group>"; };
 		90D614611C5ED2480000939F /* NetworkingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingHelper.swift; sourceTree = "<group>"; };
 		90D614621C5ED2480000939F /* TranslatorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslatorHelper.swift; sourceTree = "<group>"; };
-		90D614631C5ED2480000939F /* DatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		90D614671C5EEB630000939F /* GifsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifsCollectionViewController.swift; sourceTree = "<group>"; };
+		90D614691C5EEB810000939F /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		90D6146B1C5EEB890000939F /* UIColor+Pallette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Pallette.swift"; sourceTree = "<group>"; };
+		90D6146D1C5F07640000939F /* GifMaza-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GifMaza-Bridging-Header.h"; sourceTree = "<group>"; };
+		90D6146E1C5F07650000939F /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		90D6146F1C5F07650000939F /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		A2BD2893879B2BD592419D56 /* Pods-GifMaza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifMaza.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GifMaza/Pods-GifMaza.debug.xcconfig"; sourceTree = "<group>"; };
 		E7DC50149EAA66A70AE6C2CE /* Pods_GifMaza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GifMaza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA28BA7F44B672E7F6ADD1C /* Pods-GifMaza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifMaza.release.xcconfig"; path = "Pods/Target Support Files/Pods-GifMaza/Pods-GifMaza.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +167,7 @@
 		90D614571C5EC5CC0000939F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				90D614671C5EEB630000939F /* GifsCollectionViewController.swift */,
 				90D6140B1C5EB3D70000939F /* ViewController.swift */,
 			);
 			name = Controllers;
@@ -187,7 +196,6 @@
 			children = (
 				90D614611C5ED2480000939F /* NetworkingHelper.swift */,
 				90D614621C5ED2480000939F /* TranslatorHelper.swift */,
-				90D614631C5ED2480000939F /* DatabaseHelper.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -195,8 +203,13 @@
 		90D6145B1C5EC68E0000939F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				90D6146E1C5F07650000939F /* UIImage+animatedGIF.h */,
+				90D6146F1C5F07650000939F /* UIImage+animatedGIF.m */,
+				90D6146B1C5EEB890000939F /* UIColor+Pallette.swift */,
+				90D614691C5EEB810000939F /* Layout.swift */,
 				90D614091C5EB3D70000939F /* AppDelegate.swift */,
 				90D614151C5EB3D70000939F /* Info.plist */,
+				90D6146D1C5F07640000939F /* GifMaza-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -393,10 +406,13 @@
 			files = (
 				90D614641C5ED2480000939F /* NetworkingHelper.swift in Sources */,
 				90D6140C1C5EB3D70000939F /* ViewController.swift in Sources */,
-				90D614661C5ED2480000939F /* DatabaseHelper.swift in Sources */,
 				90D6140A1C5EB3D70000939F /* AppDelegate.swift in Sources */,
 				90D6145E1C5EC6CD0000939F /* Gil.swift in Sources */,
+				90D614701C5F07650000939F /* UIImage+animatedGIF.m in Sources */,
+				90D6146C1C5EEB890000939F /* UIColor+Pallette.swift in Sources */,
+				90D6146A1C5EEB810000939F /* Layout.swift in Sources */,
 				90D614651C5ED2480000939F /* TranslatorHelper.swift in Sources */,
+				90D614681C5EEB630000939F /* GifsCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,10 +553,13 @@
 			baseConfigurationReference = A2BD2893879B2BD592419D56 /* Pods-GifMaza.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GifMaza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kanchy.GifMaza;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GifMaza/GifMaza-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -549,10 +568,12 @@
 			baseConfigurationReference = EDA28BA7F44B672E7F6ADD1C /* Pods-GifMaza.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GifMaza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kanchy.GifMaza;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GifMaza/GifMaza-Bridging-Header.h";
 			};
 			name = Release;
 		};
