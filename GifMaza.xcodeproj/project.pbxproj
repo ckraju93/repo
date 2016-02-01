@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		746A767DD1439C84031E5FBB /* Pods_GifMaza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DC50149EAA66A70AE6C2CE /* Pods_GifMaza.framework */; };
 		90D6140A1C5EB3D70000939F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D614091C5EB3D70000939F /* AppDelegate.swift */; };
 		90D6140C1C5EB3D70000939F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6140B1C5EB3D70000939F /* ViewController.swift */; };
 		90D6140F1C5EB3D70000939F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D6140D1C5EB3D70000939F /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		90D614141C5EB3D70000939F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D614121C5EB3D70000939F /* LaunchScreen.storyboard */; };
 		90D6141F1C5EB3D70000939F /* GifMazaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6141E1C5EB3D70000939F /* GifMazaTests.swift */; };
 		90D6142A1C5EB3D70000939F /* GifMazaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D614291C5EB3D70000939F /* GifMazaUITests.swift */; };
+		90D6145E1C5EC6CD0000939F /* Gil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6145D1C5EC6CD0000939F /* Gil.swift */; };
+		90D614641C5ED2480000939F /* NetworkingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D614611C5ED2480000939F /* NetworkingHelper.swift */; };
+		90D614651C5ED2480000939F /* TranslatorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D614621C5ED2480000939F /* TranslatorHelper.swift */; };
+		90D614661C5ED2480000939F /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D614631C5ED2480000939F /* DatabaseHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,13 @@
 		90D614251C5EB3D70000939F /* GifMazaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifMazaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D614291C5EB3D70000939F /* GifMazaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifMazaUITests.swift; sourceTree = "<group>"; };
 		90D6142B1C5EB3D70000939F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90D6145D1C5EC6CD0000939F /* Gil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gil.swift; sourceTree = "<group>"; };
+		90D614611C5ED2480000939F /* NetworkingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingHelper.swift; sourceTree = "<group>"; };
+		90D614621C5ED2480000939F /* TranslatorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslatorHelper.swift; sourceTree = "<group>"; };
+		90D614631C5ED2480000939F /* DatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		A2BD2893879B2BD592419D56 /* Pods-GifMaza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifMaza.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GifMaza/Pods-GifMaza.debug.xcconfig"; sourceTree = "<group>"; };
+		E7DC50149EAA66A70AE6C2CE /* Pods_GifMaza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GifMaza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA28BA7F44B672E7F6ADD1C /* Pods-GifMaza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifMaza.release.xcconfig"; path = "Pods/Target Support Files/Pods-GifMaza/Pods-GifMaza.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				746A767DD1439C84031E5FBB /* Pods_GifMaza.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DD6BD78FB4D8685897A69A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2BD2893879B2BD592419D56 /* Pods-GifMaza.debug.xcconfig */,
+				EDA28BA7F44B672E7F6ADD1C /* Pods-GifMaza.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		90D613FD1C5EB3D70000939F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				90D6141D1C5EB3D70000939F /* GifMazaTests */,
 				90D614281C5EB3D70000939F /* GifMazaUITests */,
 				90D614071C5EB3D70000939F /* Products */,
+				2DD6BD78FB4D8685897A69A3 /* Pods */,
+				D1C521BE7FACF6A25C1C5AA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +121,12 @@
 		90D614081C5EB3D70000939F /* GifMaza */ = {
 			isa = PBXGroup;
 			children = (
-				90D614091C5EB3D70000939F /* AppDelegate.swift */,
-				90D6140B1C5EB3D70000939F /* ViewController.swift */,
-				90D6140D1C5EB3D70000939F /* Main.storyboard */,
-				90D614101C5EB3D70000939F /* Assets.xcassets */,
-				90D614121C5EB3D70000939F /* LaunchScreen.storyboard */,
-				90D614151C5EB3D70000939F /* Info.plist */,
+				90D6145B1C5EC68E0000939F /* Supporting Files */,
+				90D6145A1C5EC6640000939F /* Helpers */,
+				90D614561C5EC5C40000939F /* Cells */,
+				90D614571C5EC5CC0000939F /* Controllers */,
+				90D614581C5EC5D60000939F /* Models */,
+				90D614591C5EC5EA0000939F /* Views */,
 			);
 			path = GifMaza;
 			sourceTree = "<group>";
@@ -125,6 +149,66 @@
 			path = GifMazaUITests;
 			sourceTree = "<group>";
 		};
+		90D614561C5EC5C40000939F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		90D614571C5EC5CC0000939F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				90D6140B1C5EB3D70000939F /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		90D614581C5EC5D60000939F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90D6145D1C5EC6CD0000939F /* Gil.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		90D614591C5EC5EA0000939F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				90D6140D1C5EB3D70000939F /* Main.storyboard */,
+				90D614121C5EB3D70000939F /* LaunchScreen.storyboard */,
+				90D614101C5EB3D70000939F /* Assets.xcassets */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		90D6145A1C5EC6640000939F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				90D614611C5ED2480000939F /* NetworkingHelper.swift */,
+				90D614621C5ED2480000939F /* TranslatorHelper.swift */,
+				90D614631C5ED2480000939F /* DatabaseHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		90D6145B1C5EC68E0000939F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90D614091C5EB3D70000939F /* AppDelegate.swift */,
+				90D614151C5EB3D70000939F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D1C521BE7FACF6A25C1C5AA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7DC50149EAA66A70AE6C2CE /* Pods_GifMaza.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90D6142E1C5EB3D70000939F /* Build configuration list for PBXNativeTarget "GifMaza" */;
 			buildPhases = (
+				FF6AEBFAB64104B88437D9D2 /* Check Pods Manifest.lock */,
 				90D614021C5EB3D70000939F /* Sources */,
 				90D614031C5EB3D70000939F /* Frameworks */,
 				90D614041C5EB3D70000939F /* Resources */,
+				B6263E7ECC72EC9A1C5D55B9 /* Embed Pods Frameworks */,
+				66590443C34D6A207E8A132A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,13 +338,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		66590443C34D6A207E8A132A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GifMaza/Pods-GifMaza-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6263E7ECC72EC9A1C5D55B9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GifMaza/Pods-GifMaza-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF6AEBFAB64104B88437D9D2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		90D614021C5EB3D70000939F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90D614641C5ED2480000939F /* NetworkingHelper.swift in Sources */,
 				90D6140C1C5EB3D70000939F /* ViewController.swift in Sources */,
+				90D614661C5ED2480000939F /* DatabaseHelper.swift in Sources */,
 				90D6140A1C5EB3D70000939F /* AppDelegate.swift in Sources */,
+				90D6145E1C5EC6CD0000939F /* Gil.swift in Sources */,
+				90D614651C5ED2480000939F /* TranslatorHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +534,7 @@
 		};
 		90D6142F1C5EB3D70000939F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2BD2893879B2BD592419D56 /* Pods-GifMaza.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GifMaza/Info.plist;
@@ -406,6 +546,7 @@
 		};
 		90D614301C5EB3D70000939F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDA28BA7F44B672E7F6ADD1C /* Pods-GifMaza.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GifMaza/Info.plist;
@@ -482,6 +623,7 @@
 				90D614301C5EB3D70000939F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90D614311C5EB3D70000939F /* Build configuration list for PBXNativeTarget "GifMazaTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +632,7 @@
 				90D614331C5EB3D70000939F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90D614341C5EB3D70000939F /* Build configuration list for PBXNativeTarget "GifMazaUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +641,7 @@
 				90D614361C5EB3D70000939F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

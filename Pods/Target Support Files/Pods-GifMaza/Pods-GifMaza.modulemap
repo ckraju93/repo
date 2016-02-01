@@ -1,0 +1,6 @@
+framework module Pods_GifMaza {
+  umbrella header "Pods-GifMaza-umbrella.h"
+
+  export *
+  module * { export * }
+}
